@@ -1,0 +1,87 @@
+header {
+  background-color:  rgb(31, 31, 31, 0.9);
+  padding: 5px;
+}
+nav {
+  padding: 10px;
+}
+li {
+    list-style: none;
+    display: inline;
+    padding:5px;
+}
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.search_button:hover {
+    background-color: green;
+    color:white;
+}
+.hamburgermenu {
+  display: none;
+}
+@media (max-width: 789px) {
+  .hamburgermenu {
+    display: inline;
+  }
+  li {
+    display: none;
+  }
+  ul:first-child{
+    display: inline;
+  }
+}
+h3 {
+  display: inline;
+  color:white;
+}
+li:nth-child(2) {
+  color:white;
+}
+li:hover{
+  transition: 300ms;
+  color: green;
+}
+ul > li > a {
+  color: inherit;
+  text-decoration: none;
+}
+ul > li > a:hover {
+  color: green;
+  transition: 300ms;  
+  text-decoration: none;
+}
+li:nth-child(3) {
+  color:rgb(186, 183, 183);
+}
+ul > li > select {
+  background-color: inherit;
+  border: none;
+  color: gray;
+}
+li:nth-child(5) {
+  color:darkgrey;
+}
+.SearchDiv {
+  display: inline;
+}
+.search_button {
+  display: inline;
+  border-radius: 5px;
+  height:100%;
+  background-color: inherit;
+  border-color: green;
+  color: green;
+}
+
+input[type="text"] {
+  display: inline;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+li:last-child {
+  padding : 0px;
+}
