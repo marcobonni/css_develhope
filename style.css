@@ -1,0 +1,32 @@
+.links > a {
+    color: #2b2b2b;
+}
+.links > a:hover {
+    transition: 300ms;
+    color: #2b2bb2;
+}
+aside > .links { 
+    display: flex;
+    flex-direction: column;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 200px;
+    justify-content: flex-start;
+}
+img {
+    height: 2ch;
+    width: 2ch;
+}
+body {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.username {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
