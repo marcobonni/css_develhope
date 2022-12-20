@@ -1,0 +1,93 @@
+.calc {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "result result result result"
+    "plus min mult div"
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zeros point ac equal";
+}
+.calc > div {
+    border: grey 1px solid;
+}
+.result {
+    display: inline;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    grid-area: result;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: right;
+}
+.plus,
+.min,
+.mult,
+.div {
+    background-color: silver;
+    text-align: center;
+}
+.equal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 0, 0.5);
+    grid-area: equal;
+    border-bottom-right-radius: 10px;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.zeros {
+    grid-area: zeros;
+    border-bottom-left-radius: 10px;
+}
+.point {
+    grid-area: point;
+}
+.ac {
+    grid-area: ac;
+}
+.seven,
+.eight,
+.nine,
+.four,
+.five,
+.six,
+.one,
+.two,
+.three,
+.zeros,
+.point,
+.ac {
+    text-align: center;
+    background-color: whitesmoke;
+}
