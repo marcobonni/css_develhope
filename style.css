@@ -1,3 +1,6 @@
+body {
+    height: 100vh;
+}
 .calc {
     height: 100%;
     width: 100%;
@@ -16,20 +19,24 @@
     border: grey 1px solid;
 }
 .result {
-    display: inline;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     background-color: rgb(0, 0, 0, 0.8);
     color: white;
     grid-area: result;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    text-align: right;
+
 }
 .plus,
 .min,
 .mult,
 .div {
     background-color: silver;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .equal {
     display: flex;
@@ -88,6 +95,8 @@
 .zeros,
 .point,
 .ac {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: whitesmoke;
 }
